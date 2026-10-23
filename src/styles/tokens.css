@@ -1,0 +1,134 @@
+/**
+ * CHICA ROSA - SISTEMA DE DISEÑO Y VARIABLES CSS
+ * Paleta oficial y tokens de diseño
+ */
+
+:root {
+  /* ==========================================================================
+     PALETA OFICIAL CHICA ROSA
+     ========================================================================== */
+  --dust-grey: #D6D2D2;
+  --lavender-veil: #F1E4F3;
+  --soft-blossom: #F4BBD3;
+  --pink-carnation: #F686BD;
+  --rose-kiss: #FE5D9F;
+
+  /* ==========================================================================
+     VARIANTES DERIVADAS Y SEMÁNTICAS
+     ========================================================================== */
+  /* Fondos */
+  --bg-app: #FAF8FA;
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #FDF9FB;
+  --bg-lavender: #F7EDF9;
+  --bg-soft: #FDEEF5;
+  --bg-overlay: rgba(45, 42, 46, 0.5);
+
+  /* Textos (Con contraste WCAG 2.1 AA >= 4.5:1) */
+  --text-primary: #232023;       /* Negro cálido suave (contraste > 12:1 sobre blanco) */
+  --text-secondary: #5C555D;     /* Gris neutro cálido (contraste > 5.5:1 sobre blanco) */
+  --text-muted: #7D7680;         /* Gris sutil para leyendas */
+  --text-inverse: #FFFFFF;       /* Blanco puro */
+  --text-on-rose: #FFFFFF;       /* Para botones con peso bold */
+  --text-rose: #D83177;          /* Rose con contraste > 4.5:1 sobre blanco para textos */
+  --text-success: #1E6B3E;       /* Verde accesible */
+  --text-warning: #944A00;       /* Ámbar accesible */
+  --text-danger: #C01B35;        /* Rojo accesible */
+
+  /* Bordes y Separadores */
+  --border-subtle: rgba(214, 210, 210, 0.6);
+  --border-medium: #D6D2D2;
+  --border-focus: #FE5D9F;
+  --border-pink: #F4BBD3;
+
+  /* Estados de Botones e Interacciones */
+  --btn-primary-bg: #FE5D9F;
+  --btn-primary-hover: #E74789;
+  --btn-primary-active: #CC3675;
+  --btn-secondary-bg: #F1E4F3;
+  --btn-secondary-hover: #E8D3EC;
+  --btn-whatsapp-bg: #25D366;
+  --btn-whatsapp-hover: #20BD5A;
+
+  /* ==========================================================================
+     TIPOGRAFÍA
+     ========================================================================== */
+  --font-family-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md: 1.125rem;    /* 18px */
+  --font-size-lg: 1.25rem;     /* 20px */
+  --font-size-xl: 1.5rem;      /* 24px */
+  --font-size-2xl: 1.875rem;   /* 30px */
+  --font-size-3xl: 2.25rem;    /* 36px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* ==========================================================================
+     ESPACIADO Y RADIOS
+     ========================================================================== */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 22px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     SOMBRAS Y ELEVACIÓN
+     ========================================================================== */
+  --shadow-sm: 0 1px 3px rgba(45, 42, 46, 0.05);
+  --shadow-md: 0 4px 14px rgba(45, 42, 46, 0.07);
+  --shadow-lg: 0 10px 25px rgba(45, 42, 46, 0.1);
+  --shadow-card: 0 2px 8px rgba(254, 93, 159, 0.06), 0 1px 2px rgba(45, 42, 46, 0.04);
+  --shadow-drawer: -4px 0 24px rgba(45, 42, 46, 0.12);
+
+  /* ==========================================================================
+     TRANSICIONES Y TIMINGS
+     ========================================================================== */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ==========================================================================
+     Z-INDEX HIERARCHY
+     ========================================================================== */
+  --z-sticky: 100;
+  --z-backdrop: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+
+  /* ==========================================================================
+     CONTENEDOR MÁXIMO
+     ========================================================================== */
+  --max-width-content: 1160px;
+}
+
+/* Respeto por preferencias de reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,147 @@
+import type { Category, Product } from '../types/product';
+
+export const DEMO_CATEGORIES: Category[] = [
+  {
+    id: 'cat-vestidos-01',
+    name: 'Vestidos',
+    slug: 'vestidos',
+    is_active: true,
+    display_order: 1,
+  },
+  {
+    id: 'cat-blusas-02',
+    name: 'Blusas y Tops',
+    slug: 'blusas-y-tops',
+    is_active: true,
+    display_order: 2,
+  },
+  {
+    id: 'cat-accesorios-03',
+    name: 'Accesorios',
+    slug: 'accesorios',
+    is_active: true,
+    display_order: 3,
+  },
+];
+
+/**
+ * Catálogo de demostración claramente identificado.
+ * Se utiliza únicamente para verificar el flujo de la aplicación antes de
+ * conectar las credenciales definitivas de Supabase o cargar el inventario real.
+ */
+export const DEMO_PRODUCTS: Product[] = [
+  {
+    id: 'prod-demo-01',
+    name: '[DEMO] Vestido Rosa Palo Elegance',
+    slug: 'demo-vestido-rosa-palo-elegance',
+    reference: 'CR-VES-001',
+    description: 'Vestido midi con caída suave, escote sutil y detalle en cintura. Ideal para ocasiones especiales o eventos de día.',
+    price_cop: 89000,
+    compare_at_price_cop: 110000,
+    category_id: 'cat-vestidos-01',
+    image_urls: [
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+    ],
+    is_active: true,
+    is_available: true,
+    is_featured: true,
+  },
+  {
+    id: 'prod-demo-02',
+    name: '[DEMO] Blusa Soft Blossom Delicada',
+    slug: 'demo-blusa-soft-blossom-delicada',
+    reference: 'CR-BLU-002',
+    description: 'Blusa en tela fresca y transpirable con detalles en mangas y tonalidad rosa pastel. Confortable y versátil.',
+    price_cop: 54000,
+    compare_at_price_cop: null,
+    category_id: 'cat-blusas-02',
+    image_urls: [
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+    ],
+    is_active: true,
+    is_available: true,
+    is_featured: true,
+  },
+  {
+    id: 'prod-demo-03',
+    name: '[DEMO] Cartera Compacta Rose Kiss',
+    slug: 'demo-cartera-compacta-rose-kiss',
+    reference: 'CR-ACC-003',
+    description: 'Bolso bandolera de acabado liso con broche dorado y compartimientos interiores prácticos.',
+    price_cop: 68000,
+    compare_at_price_cop: 79000,
+    category_id: 'cat-accesorios-03',
+    image_urls: [
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+    ],
+    is_active: true,
+    is_available: true,
+    is_featured: false,
+  },
+  {
+    id: 'prod-demo-04',
+    name: '[DEMO] Vestido Flores Lavanda',
+    slug: 'demo-vestido-flores-lavanda',
+    reference: 'CR-VES-004',
+    description: 'Estampado floral sutil sobre fondo lavanda, tela ligera con forro interno. Ajuste cómodo.',
+    price_cop: 95000,
+    compare_at_price_cop: null,
+    category_id: 'cat-vestidos-01',
+    image_urls: [
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+    ],
+    is_active: true,
+    is_available: false, // Producto de prueba para verificar estado agotado
+    is_featured: false,
+  },
+  {
+    id: 'prod-demo-05',
+    name: '[DEMO] Top Satinado Pink Carnation',
+    slug: 'demo-top-satinado-pink-carnation',
+    reference: 'CR-BLU-005',
+    description: 'Top de tirantes finos ajustables con caída fluida. Tejido sedoso y fácil de combinar.',
+    price_cop: 42000,
+    compare_at_price_cop: 49000,
+    category_id: 'cat-blusas-02',
+    image_urls: [
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+    ],
+    is_active: true,
+    is_available: true,
+    is_featured: true,
+  },
+  {
+    id: 'prod-demo-06',
+    name: '[DEMO] Set Aretes y Collar Perlas Rosa',
+    slug: 'demo-set-aretes-collar-perlas-rosa',
+    reference: 'CR-ACC-006',
+    description: 'Conjunto delicado hipoalergénico con baño dorado y cuentas en tonalidad cuarzo rosa.',
+    price_cop: 36000,
+    compare_at_price_cop: null,
+    category_id: 'cat-accesorios-03',
+    image_urls: [
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+      '/images/placeholders/product-placeholder.svg',
+    ],
+    is_active: true,
+    is_available: true,
+    is_featured: false,
+  },
+];

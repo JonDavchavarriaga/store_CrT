@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Reemplazar con el dominio oficial definitivo tras conectar DNS
+Sitemap: https://chicarosa.co/sitemap.xml

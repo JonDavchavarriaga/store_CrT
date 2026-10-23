@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#F1E4F3"/>
+  <circle cx="200" cy="180" r="50" fill="#F4BBD3" opacity="0.6"/>
+  <path d="M140 260 L180 200 L220 240 L240 220 L270 260 Z" fill="#F686BD" opacity="0.5"/>
+  <text x="200" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#8C858B">Chica Rosa</text>
+</svg>
